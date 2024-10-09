@@ -1,7 +1,7 @@
 
 class Pessoa:
 
-    def __init__(self,nome,peso,idade):
+    def __init__(self,nome,peso,idade,andando):
         self.nome = nome
         self.peso = peso
         self.idade = idade
@@ -57,7 +57,7 @@ class Pessoa:
             print(f" {self.nome} Não está Andando")
 
     def pararDeDormir(self):
-        if (self.andando):
+        if (self.dormindo):
             self.dormindo=False
             print(f" {self.nome} Parou de Dormir")
         else:
