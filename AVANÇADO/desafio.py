@@ -21,7 +21,6 @@ while resposta != 3:
                     for j in range(tam):
                         if nomeUsuario == usuarios[j]:
                             posi = j
-
                             for l in range(3, -1, -1):
                                 senhaUsuario = input(f"\nOlá {nomeUsuario} ㋡! \n⤜ Digite sua senha: ")
                                 if senhaUsuario == senhas[posi]:
@@ -36,7 +35,7 @@ while resposta != 3:
                 else:
                     print(f"\n«Usuário não existe!» \nRestam {k - 1} tentativas!")
                 if k == 1:
-                    print("\n⊗ Tentativas esgotadas! ⊗ \nVoltando ao menu ↺")
+                    print("\n--- Tentativas esgotadas! --- \n---Voltando ao menu ↺---")
                     break
         case _:
-            print("QUASE USEI O VSCODE")
+            print("\nQUASE USEI O VSCODE\n")

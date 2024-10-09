@@ -67,7 +67,7 @@ def recebeTexto(texto):
 
 def novaLista(lista):
     new_list=[]
-    for i in l:
+    for i in lista:
         if i in new_list:
             new_list.append(i)
     print(new_list)
