@@ -10,7 +10,7 @@ class Pessoa:
         self.comendo=False
 
     def dormir(self):
-        if (not self.andando and not self.comendo and not self.dormindo):
+        if not self.andando and not self.comendo and not self.dormindo:
             self.dormindo = True
             print(f" {self.nome} Foi Dormir")
         elif (self.andando):
@@ -21,7 +21,7 @@ class Pessoa:
             print(f" {self.nome}  Já Está Dormindo")
 
     def andar(self):
-        if (not self.andando and not self.comendo and not self.dormindo):
+        if not self.andando and not self.comendo and not self.dormindo:
             self.andando = True
             print(f" {self.nome} Foi andar de cavalo")
         elif (self.andando):
@@ -32,7 +32,7 @@ class Pessoa:
             print(f" {self.nome} Está Dormindo ñ pode andar")
 
     def comer(self):
-        if (not self.andando and not self.comendo and not self.dormindo):
+        if not self.andando and not self.comendo and not self.dormindo:
             self.comendo = True
             print(f" {self.nome} Foi comer")
         elif (self.andando):
@@ -62,3 +62,42 @@ class Pessoa:
             print(f" {self.nome} Parou de Dormir")
         else:
             print(f" {self.nome} Não está Dormindo")
+
+class Animal:
+    def __init__(self,nome,cor):
+        self.nome=nome
+        self.cor=cor
+
+    def comer(self):
+        print(f"O {self.nome} Foi comer...")
+
+class Gato(Animal):
+    def __init__(self,nome,cor):
+        super().__init__(nome,cor)
+
+    def miar (self):
+        print(f"O {self.nome} Fez MIAAAAAAAAAU")
+
+class Cachorro(Animal):
+    def __init__(self,nome,cor):
+        super().__init__(nome,cor)
+
+    def comer(self,alimento):
+        print(f"O cachorro de {self.nome} foi comer {alimento} ")
+
+    def late(self):
+        print(f"O {self.nome} Fez AU AU AU")
+
+class Papagaio(Animal):
+    def __init__(self, nome, cor):
+        super().__init__(nome, cor)
+
+    def Falar(self):
+        print(f"O {self.nome} Fez arhh arhh")
+
+class Galinha(Animal):
+    def __init__(self,nome,cor):
+        super().__init__(nome,cor)
+
+    def cacarejar(self):
+        print(f"A {self.nome} Có Có Có Có ")
