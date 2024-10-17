@@ -101,3 +101,19 @@ class Galinha(Animal):
 
     def cacarejar(self):
         print(f"A {self.nome} Có Có Có Có ")
+
+class Arquivo:
+    def __init__(self,nomeArquivo):
+        self.nome=nomeArquivo
+
+    def pesquisar(texto):
+        cont = 0
+        with open(, "r") as pesq:
+            for x in pesq:
+                if texto in x:
+                    cont += 1
+            print(f"Achei {cont} ocorrencia de {texto} no arquivo")
+
+    def gravar(t):
+        with open("nome.txt", "a") as arquivo:
+            arquivo.write(f"{t}\n")
